@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,6 +24,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/b2"
             android:layout_weight="1" />
+        <Button
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b3"
+            android:layout_weight="1" />
+        <Button
+            android:text="Random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b4"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,14 +55,14 @@
             android:gravity="center"
             android:layout_weight="1">
 
-            <TextView
-                android:layout_width="wrap_content"
+
+            <ImageView
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/lefteye"
-                android:background="@android:color/holo_orange_dark"
+                app:srcCompat="@drawable/smiley2"
                 android:gravity="center"
-                android:padding="10dp"
-                android:text="   " />
+                android:id="@+id/eye1"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -58,15 +71,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
-
-            <TextView
-                android:text="   "
-                android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/righteye"
-                android:background="@android:color/holo_orange_dark"
+                app:srcCompat="@drawable/smiley2"
                 android:gravity="center"
-                android:padding="10dp" />
+                android:id="@+id/eye2"
+                />
         </LinearLayout>
 
     </LinearLayout>
@@ -88,14 +99,14 @@
             android:gravity="center"
             android:layout_weight="1">
 
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth1"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+            />
+
         </LinearLayout>
 
         <LinearLayout
@@ -105,30 +116,28 @@
             android:gravity="center"
             android:layout_weight="1">
 
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth2"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+                />
         </LinearLayout>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_weight="1">
-
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth3"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -137,15 +146,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
-
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth4"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -154,15 +161,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
-
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth5"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -171,31 +176,28 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
-
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth6"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+                />
         </LinearLayout>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
-
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth7"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -204,31 +206,28 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
-
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/smiley2"
+                android:gravity="center"
                 android:id="@+id/mouth8"
-                android:background="@android:color/holo_orange_dark"
-                android:gravity="center"
-                android:padding="10dp" />
+                />
         </LinearLayout>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center">
-
-            <TextView
-                android:text=" "
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/mouth9"
-                android:background="@android:color/holo_orange_dark"
+                app:srcCompat="@drawable/smiley2"
                 android:gravity="center"
-                android:padding="10dp" />
+                android:id="@+id/mouth9"
+                />
         </LinearLayout>
 
     </LinearLayout>
