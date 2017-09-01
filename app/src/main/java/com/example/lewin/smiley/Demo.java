@@ -2,6 +2,7 @@ package com.example.lewin.smiley;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -84,18 +85,20 @@ public class Demo extends AppCompatActivity {
         Resources r = getResources();
         String name = getPackageName();
 
-        int pos = 1;
-        while(findViewById( getResources().getIdentifier("mouth" + pos, "id", getPackageName()) ) != null) {
-                Mouth.add(findViewById( getResources().getIdentifier("mouth" + pos, "id", getPackageName()) ));
-                pos++;
+        for (int pos = 0; pos<100; pos++){
+            if (findViewById(getResources().getIdentifier("mouth" + pos, "id", getPackageName())) != null) {
+                Mouth.add(findViewById(getResources().getIdentifier("mouth" + pos, "id", getPackageName())));
+                Log.d("creation", "onPostCreate: mouth" + pos);
+            }
         }
 
-        pos = 1;
-        while(findViewById( getResources().getIdentifier("eye" + pos, "id", getPackageName()) ) != null) {
-            Eyes.add(findViewById( getResources().getIdentifier("eye" + pos, "id", getPackageName()) ));
-            pos++;
-        }
+        for (int pos = 0; pos<100; pos++){
+            if (findViewById(getResources().getIdentifier("eye" + pos, "id", getPackageName())) != null) {
+                Eyes.add(findViewById(getResources().getIdentifier("eye" + pos, "id", getPackageName())));
+                Log.d("creation", "onPostCreate: eye" + pos);
+            }
 
+        }
 
     }
 
@@ -124,7 +127,7 @@ public class Demo extends AppCompatActivity {
     private void setSadnessState (float howHappy){
 
         for (View mouthPixel : Mouth){
-            mouthPixel.animate().translationY((float)(howHappy-0.5)*((float)-pow((5.0*abs(Mouth.indexOf(mouthPixel) - Mouth.size()/2)),2.0)));
+            mouthPixel.animate().translationY((float)(howHappy-0.5)*((float)-pow((2.0*abs((Mouth.indexOf(mouthPixel)%(Mouth.size()/2)) - (Mouth.size()/2)/2)),2.0)));
 
 
 
